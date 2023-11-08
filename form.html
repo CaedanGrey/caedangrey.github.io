@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+
+    <!-- CSS Links/Files; Bootstrap and Custom-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <!-- Contact Form JavaScript containing email verification and validation-->
+    <script src="form.js"></script>
+</head>
+
+<!--Content Body-->
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./form.html">Contact Us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active navbar-brand" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbar-brand" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore the Final Frontier
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./city-anchorage.html">Anchorage, AK</a></li>
+                            <li><a class="dropdown-item" href="./city-juneau.html">Juneau, AK (Capital)</a></li>
+                            <li><a class="dropdown-item" href="./city-skagway.html">Skagway, AK</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://alaska.gov/" target="_blank">Learn more about
+                                    Alaska</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active navbar-brand" aria-current="page" href="./form.html">Contact Us Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <section>
+        <!--Carousel-->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay-image"
+                        style="background-image:url(./Gallery-0.jpg);"
+                        alt="Humpback Whale breaching water">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image"
+                        style="background-image:url(./Gallery-1.jpg);"
+                        alt="Sunset at Alaskan lake">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image"
+                        style="background-image:url(./Gallery-2.jpg);"
+                        alt="Welcome to Alaska and the Gateway to the Klondike sign">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image"
+                        style="background-image:url(Gallery-3.jpg);"
+                        alt="Scenic river pass">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image"
+                        style="background-image:url(Gallery-4.jpg);"
+                        alt="Glacier Look">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image"
+                        style="background-image:url(Gallery-5.jpg);"
+                        alt="Mother Bear with Cubs">
+                    </div>
+                </div>
+            </div>
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="sr-only"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="sr-only"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <form>
+            <h3 style="text-align:center">Contact Us Form</h3>
+            <aside>
+                <p>We would love to hear from you!</p>
+            </aside>
+            <div class="mb-3">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Enter your first name">
+            </div>
+            <div class="mb-3">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Enter your last name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="emailConfirmation" class="form-label">Confirm Email Address</label>
+                <input type="email" class="form-control" id="emailConfirmation"
+                    placeholder="Please re-enter your email address" oninput="verifyEmail()" required>
+                <p id="emailMismatch" style="color: red; display: none;">Email addresses do not match.</p>
+            </div>
+            <div class="mb-3">
+                <label for="question" class="form-label">What would you like to ask?</label>
+                <input type="text" class="form-control" id="question" placeholder="Enter your question">
+            </div>
+            <input type="reset" value="Clear">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
