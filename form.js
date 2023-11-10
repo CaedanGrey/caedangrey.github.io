@@ -18,24 +18,39 @@ document.addEventListener("DOMContentLoaded", function() {
             isValid = false;
         }
 
-        // Add other validation checks as needed...
+        // Validate at least one adventure preference is checked
+        const adventurePreferences = document.querySelectorAll('input[name="adventurePreference"]:checked');
+        if (adventurePreferences.length === 0) {
+            alert("Please select at least one adventure preference.");
+            isValid = false;
+        }
 
+        // Validate at least one accommodation preference is checked
+        const accommodationPreferences = document.querySelectorAll('input[name="accommodationPreference"]:checked');
+        if (accommodationPreferences.length === 0) {
+            alert("Please select at least one accommodation preference.");
+            isValid = false;
+        }
+
+        // Prevent form submission if validation fails
         if (!isValid) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
         }
     });
 
     // Dynamic elements
-    // Example: Show additional input when 'Other' is selected in Adventure Preferences
-    document.querySelectorAll('input[name="activities"]').forEach(function(input) {
-        input.addEventListener("change", function() {
-            const otherInput = document.querySelector('input[name="other_activities"]');
-            if (input.value === "other" && input.checked) {
-                otherInput.style.display = 'block';
-            } else {
-                otherInput.style.display = 'none';
-            }
-        });
+    // Show additional input when 'Other' is selected in Adventure Preferences
+    const otherAdventureCheckbox = document.querySelector('input[id="otherAdventure"]');
+    otherAdventureCheckbox.addEventListener("change", function() {
+        const otherInput = document.querySelector('input[name="otherAdventure"]');
+        otherInput.style.display = this.checked ? 'block' : 'none';
+    });
+
+    // Show additional input when 'Other' is selected in Accommodation Preferences
+    const otherAccommodationCheckbox = document.querySelector('input[id="otherAccommodation"]');
+    otherAccommodationCheckbox.addEventListener("change", function() {
+        const otherInput = document.querySelector('input[name="otherAccommodation"]');
+        otherInput.style.display = this.checked ? 'block' : 'none';
     });
 
     // Helper function to validate email
