@@ -132,62 +132,92 @@
         </div>
 
         <form>
-            <h2>Taniti Adventure Planning Form</h2>
+    <h2>Taniti Adventure Planning Form</h2>
+
     <p>Welcome to Taniti's personalized adventure planning! Please fill out the details below, and one of our expert local guides will get in touch with you to craft the perfect itinerary for your visit.</p>
 
-    <form action="/submit-form" method="post">
-        <fieldset>
-            <legend>Personal Information:</legend>
-            Full Name: <input type="text" name="fullname"><br>
-            Email Address: <input type="email" name="email"><br>
-            Phone Number: <input type="tel" name="phone"><br>
-            Preferred Contact Method: 
-            <input type="radio" name="contact" value="email"> Email
-            <input type="radio" name="contact" value="phone"> Phone
-        </fieldset>
+    <h3>Personal Information:</h3>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required><br>
 
-        <fieldset>
-            <legend>Travel Details:</legend>
-            Arrival Date: <input type="date" name="arrival"><br>
-            Departure Date: <input type="date" name="departure"><br>
-            Number of Travelers: <input type="number" name="travelers"><br>
-            Ages of Travelers: <input type="text" name="ages">
-        </fieldset>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br>
 
-        <fieldset>
-            <legend>Adventure Preferences:</legend>
-            <input type="checkbox" name="activities" value="beach"> Beach Relaxation<br>
-            <input type="checkbox" name="activities" value="hiking"> Hiking and Exploration<br>
-            <!-- Add other checkboxes similarly -->
-            Other: <input type="text" name="other_activities">
-        </fieldset>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required><br>
 
-        <fieldset>
-            <legend>Accommodation Preferences:</legend>
-            <!-- Add checkboxes for accommodation preferences -->
-            Other: <input type="text" name="other_accommodation">
-        </fieldset>
+    <p>Preferred Contact Method:</p>
+    <input type="radio" id="contactEmail" name="contactMethod" value="Email">
+    <label for="contactEmail">Email</label><br>
+    <input type="radio" id="contactPhone" name="contactMethod" value="Phone">
+    <label for="contactPhone">Phone</label><br>
 
-        <fieldset>
-            <legend>Special Requests:</legend>
-            <textarea name="special_requests" rows="4" cols="50"></textarea>
-        </fieldset>
+    <h3>Travel Details:</h3>
+    <label for="arrival">Arrival Date:</label>
+    <input type="date" id="arrival" name="arrival" required><br>
 
-        <fieldset>
-            <legend>Additional Comments:</legend>
-            <textarea name="additional_comments" rows="4" cols="50"></textarea>
-        </fieldset>
+    <label for="departure">Departure Date:</label>
+    <input type="date" id="departure" name="departure" required><br>
 
-        <fieldset>
-            <legend>Confirmation:</legend>
-            <input type="checkbox" name="promotional_offers" value="yes"> I would like to receive promotional offers and updates from Taniti Tourism.
-        </fieldset>
+    <label for="travelers">Number of Travelers:</label>
+    <input type="number" id="travelers" name="travelers" required><br>
 
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
-        </form>
+    <label for="ages">Ages of Travelers:</label>
+    <input type="text" id="ages" name="ages"><br>
+            
+    <h3>Adventure Preferences:</h3>
+    <input type="checkbox" id="beachRelaxation" name="adventurePreference" value="Beach Relaxation">
+    <label for="beachRelaxation">Beach Relaxation</label><br>
+
+    <input type="checkbox" id="hikingExploration" name="adventurePreference" value="Hiking and Exploration">
+    <label for="hikingExploration">Hiking and Exploration</label><br>
+
+    <input type="checkbox" id="culturalExperiences" name="adventurePreference" value="Cultural Experiences">
+    <label for="culturalExperiences">Cultural Experiences (e.g., history museum, art galleries)</label><br>
+
+    <input type="checkbox" id="waterSports" name="adventurePreference" value="Water Sports">
+    <label for="waterSports">Water Sports (e.g., snorkeling, fishing)</label><br>
+
+    <input type="checkbox" id="rainforestAdventure" name="adventurePreference" value="Rainforest Adventure">
+    <label for="rainforestAdventure">Rainforest Adventure (e.g., ziplining)</label><br>
+
+    <input type="checkbox" id="volcanoTour" name="adventurePreference" value="Volcano Tour">
+    <label for="volcanoTour">Volcano Tour</label><br>
+
+<input type="checkbox" id="culinaryTour" name="adventurePreference" value="Culinary Tour">
+<label for="culinaryTour">Culinary Tour</label><br>
+
+<label for="otherAdventure">Other (Please specify):</label>
+<input type="text" id="otherAdventure" name="otherAdventure"><br>
+   <h3>Accommodation Preferences:</h3>
+<input type="checkbox" id="ecoLodge" name="accommodationPreference" value="Eco-Lodge">
+<label for="ecoLodge">Eco-Lodge</label><br>
+
+<input type="checkbox" id="beachResort" name="accommodationPreference" value="Beach Resort">
+<label for="beachResort">Beach Resort</label><br>
+
+<input type="checkbox" id="boutiqueHotel" name="accommodationPreference" value="Boutique Hotel">
+<label for="boutiqueHotel">Boutique Hotel</label><br>
+
+<input type="checkbox" id="hostelBackpackers" name="accommodationPreference" value="Hostel/Backpackers">
+<label for="hostelBackpackers">Hostel/Backpackers</label><br>
+
+<input type="checkbox" id="familyFriendly" name="accommodationPreference" value="Family-Friendly Options">
+<label for="familyFriendly">Family-Friendly Options</label><br>
+
+<label for="otherAccommodation">Other (Please specify):</label>
+<input type="text" id="otherAccommodation" name="otherAccommodation"><br>
+    <h3>Special Requests:</h3>
+    <textarea id="specialRequests" name="specialRequests" rows="4" cols="50"></textarea><br>
+
+    <h3>Additional Comments:</h3>
+    <textarea id="additionalComments" name="additionalComments" rows="4" cols="50"></textarea><br>
+
+    <input type="checkbox" id="promotions" name="promotions">
+    <label for="promotions">I would like to receive promotional offers and updates from Taniti Tourism.</label><br>
+
+    <input type="submit" value="SUBMIT">
+</form>
 
     </section>
 
