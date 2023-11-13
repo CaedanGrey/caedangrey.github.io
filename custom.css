@@ -210,3 +210,18 @@ li::marker {
     text-decoration: none; /* Keeps text without underline on hover */
     color: white; /* Ensures text color remains the same on hover */
 }
+.feedback-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px; /* Space between rows */
+    border-radius: 5px; /* Optional rounded corners */
+    background-color: #f9f9f9; /* Light background for the box */
+}
+
+/* Additional responsive adjustments if needed */
+@media (max-width: 768px) {
+    .feedback-box {
+        margin-bottom: 20px;
+    }
+}
+
