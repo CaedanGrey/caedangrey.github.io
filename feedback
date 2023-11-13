@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding Photography</title>
+
+    <!-- CSS Links/Files; Bootstrap and Custom-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<!--Content Body-->
+
+<body>
+    <header>   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Welcome to Tanitin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active navbar-brand" aria-current="page" href="./form.html">Plan Your Trip</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbar-brand" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Wedding Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./weddingplanner.html">Wedding Planner</a></li>
+                            <li><a class="dropdown-item" href="./photography.html">Photographer</a></li>
+                            <li><a class="dropdown-item" href="./city-skagway.html">Location/Events</a></li>
+                            <li><a class="dropdown-item" href="./city-skagway.html">Honeymoon Getaway</a></li>
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbar-brand" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Local Attractions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./city-anchorage.html">Lodging</a></li>
+                            <li><a class="dropdown-item" href="./city-juneau.html">Restaurants</a></li>
+                            <li><a class="dropdown-item" href="./city-skagway.html">Entertaiment</a></li>
+                            <li><a class="dropdown-item" href="./city-skagway.html">Sightseeing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbar-brand" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More Information
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./city-anchorage.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="./city-juneau.html">Feedback/Reviews</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav></header>
+    <section role="main">
+        <!-- Singular Image Section -->
+
+        <!--Description-->
+        <div class="container px-4 py-5" id="feedback">
+            <h2>Feedback/Reviews!</h2>
+        </div>
+        <div class="container">
+    <div class="row">
+        <!-- Feedback Box 1 -->
+        <div class="col-md-4 feedback-box">
+            <p><strong>Username:</strong> SandyBeachLover</p>
+            <p>"The Rainforest Retreat's eco-lodges were a dream! Waking up to the sound of the forest was incredibly rejuvenating. Can't wait to come back!"</p>
+        </div>
+        <!-- Feedback Box 2 -->
+        <div class="col-md-4 feedback-box">
+            <p><strong>Username:</strong> VolcanoVoyager</p>
+            <p>"The Volcanic Vista Inn was the highlight of our stay. The guided treks up the volcano were well-organized and truly a once-in-a-lifetime experience."</p>
+        </div>
+        <!-- Feedback Box 3 -->
+        <div class="col-md-4 feedback-box">
+            <p><strong>Username:</strong> CulinaryCruiser</p>
+            <p>"Every meal at The Ocean's Bounty was spectacular. Fresh seafood and the ocean view made for unforgettable dinners."</p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Feedback Box 4 -->
+        <div class="col-md-4 feedback-box">
+            <p><strong>Username:</strong> MerritonMusicFan</p>
+            <p>"Loved the live bands at Taniti Tides Music Hall! The beachside location made for the perfect evening out. The island vibes were just what I needed."</p>
+        </div>
+        <!-- Feedback Box 5 -->
+        <div class="col-md-4 feedback-box">
+            <p><strong>Username:</strong> HistoryHiker</p>
+            <p>"The Heritage Trail through Taniti City was fascinating. Learning about the island's history while seeing the architecture up close was a real treat."</p>
+        </div>
+        <!-- Feedback Box 6 -->
+        <div class="col-md-4 feedback-box">
+            <p><strong>Username:</strong> SunsetSnapper</p>
+            <p>"The Sunset Pier is simply magical. It's the best place to capture stunning photos. I've got amazing shots that'll make the best memories."</p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Feedback Box 7 -->
+        <div class="col-md-4 feedback-box">
+            <p><strong>Username:</strong> ReefExplorer</p>
+            <p>"Snorkeling in the Coral Canyons was like swimming in an aquarium. The marine life is so vibrant and diverse. Highly recommend it to any nature lover!"</p>
+        </div>
+        <!-- Feedback Box 8 -->
+        <div class="col-md-4 feedback-box">
+            <p><strong>Username:</strong> ZiplineAdventurer</p>
+            <p>"The Rainforest Zipline Adventure was exhilarating! Zooming over the treetops was both thrilling and a great way to see the island's beauty from above."</p>
+        </div>
+    </div>
+</div>
+
+<a href="./form.html" class="custom-button">Book your dream vacation now!</a>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
