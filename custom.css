@@ -234,4 +234,26 @@ li::marker {
         margin-bottom: 20px;
     }
 }
-
+.gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  .gallery img {
+    width: 30%; /* Adjust the width as needed */
+    margin-right: 5px; /* Spacing between images */
+  }
+  .gallery img:last-child {
+    margin-right: 0; /* No spacing after the last image */
+  }
+  .text-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Spacing between images and text boxes */
+  }
+  .text-boxes input[type="text"] {
+    width: 30%; /* Adjust the width as needed */
+    margin-right: 5px; /* Spacing between text boxes */
+  }
+  .text-boxes input[type="text"]:last-child {
+    margin-right: 0; /* No spacing after the last text box */
+  }
