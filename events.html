@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Taniti Adventure Planning Form</title>
+    <title>Welcome to Tainiti</title>
 
     <!-- CSS Links/Files; Bootstrap and Custom-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,17 +12,14 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="form.css">
-    <!-- Contact Form JavaScript containing email verification and validation-->
-    <script src="form.js"></script>
+    <link rel="stylesheet" type="text/css" href="custom.css">
 </head>
-
 <!--Content Body-->
 
 <body>
     <header>   <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">Taniti Event and Locations</a>
+            <a class="navbar-brand" href="./index.html">Welcome to Taniti</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -39,8 +36,8 @@
                             Wedding Services
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./city-anchorage.html">Wedding Planner</a></li>
-                            <li><a class="dropdown-item" href="./city-juneau.html">Photographer</a></li>
+                            <li><a class="dropdown-item" href="./weddingplanner.html">Wedding Planner</a></li>
+                            <li><a class="dropdown-item" href="./photography.html">Photographer</a></li>
                             <li><a class="dropdown-item" href="./events.html">Location/Events</a></li>
                             <li><a class="dropdown-item" href="./honeymoon.html">Honeymoon Getaway</a></li>
                         </ul>
@@ -62,7 +59,7 @@
                             More Information
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./city-anchorage.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
                             <li><a class="dropdown-item" href="./feedback.html">Feedback/Reviews</a></li>
                         </ul>
                     </li>
@@ -70,33 +67,31 @@
             </div>
         </div>
     </nav></header>
- <section role ="main">
+    <section role="main">
         <!--Carousel-->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0"></li>
                 <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2" class="active"></li>
             </ol>
             <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image:url(./bride-6391461_1280.jpg);"
+                        alt="Island">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image:url(./married-couple-1232510_1280.jpg);"
+                        alt="A couple getting married on a beautiful island.">
+                    </div>
+                </div>
                 <div class="carousel-item active">
-                    <div class="overlay-image"
-                        style="background-image:url(./bride-6391461_1280.jpg);"
-                        alt="Beach">
+                    <div class="overlay-image" style="background-image:url(./volcano-658783_1280.jpg);"
+                        alt="Surfing in the ocean near Tainiti">
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="overlay-image"
-                        style="background-image:url(./married-couple-1232510_1280.jpg);"
-                        alt="Wedding on beach">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="overlay-image"
-                        style="background-image:url(volcano-6568783_1280.jpg);"
-                        alt="Volcano">
-                    </div>
-                </div>
+            </div>
             <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
                 <span class="sr-only"></span>
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -107,6 +102,7 @@
             </a>
         </div>
 
+        <!--City Row-->
         <div class="container px-4 py-5" id="event-facts">
             <h2>Your Perfect Day at the Perfect Place</h2>
             <p>Taniti is a treasure trove of venues, each with its own character and charm. Exchange vows on a secluded rocky cove
