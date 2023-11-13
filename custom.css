@@ -48,7 +48,17 @@ aside>p {
     color: lightslategray;
     text-align: right;
 }
+/* Carousel Styles */
+.carousel {
+    max-width: 100%; /* Ensure it doesn't overflow the viewport */
+    margin-bottom: 20px; /* Space between the carousel and the form */
+}
 
+.carousel-item .overlay-image {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
 #cityname {
     color: purple;
 }
