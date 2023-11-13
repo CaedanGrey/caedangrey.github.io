@@ -13,12 +13,6 @@ h2 {
     padding-right: 3rem;
     padding-left: 3rem;
 }
-.single-image {
-    width: 100%;
-    height: auto;
-    text-align: center; /* Center the image if it's smaller than the container */
-    margin-bottom: 20px; /* Spacing below the image */
-}
 
 .single-image img {
     max-width: 100%;
