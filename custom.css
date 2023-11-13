@@ -17,7 +17,6 @@ h2 {
 .single-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: for rounded corners */
 }
 aside {
     width: 40%;
