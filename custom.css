@@ -1,8 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark grey text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h2 {
+    color: #0275d8; /* Blue color for headings */
+}
 .additional-information {
     padding-right: 3rem;
     padding-left: 3rem;
 }
+.single-image {
+    width: 100%;
+    height: auto;
+    text-align: center; /* Center the image if it's smaller than the container */
+    margin-bottom: 20px; /* Spacing below the image */
+}
 
+.single-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
+}
 aside {
     width: 40%;
     padding-left: 0.5rem;
