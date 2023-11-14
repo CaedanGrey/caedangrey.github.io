@@ -234,26 +234,23 @@ li::marker {
         margin-bottom: 20px;
     }
 }
-.gallery {
+.gallery, .text-boxes {
     display: flex;
     justify-content: space-between;
-  }
-  .gallery img {
-    width: 30%; /* Adjust the width as needed */
-    margin-right: 5px; /* Spacing between images */
-  }
-  .gallery img:last-child {
-    margin-right: 0; /* No spacing after the last image */
-  }
-  .text-boxes {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; /* Spacing between images and text boxes */
-  }
-  .text-boxes input[type="text"] {
-    width: 30%; /* Adjust the width as needed */
-    margin-right: 5px; /* Spacing between text boxes */
-  }
-  .text-boxes input[type="text"]:last-child {
-    margin-right: 0; /* No spacing after the last text box */
-  }
+}
+
+.gallery img, .text-boxes > div {
+    flex: 1; /* This ensures that each image and text box takes up equal space */
+    margin-right: 5px; /* Adjust margin as needed */
+}
+
+.gallery img:last-child, .text-boxes > div:last-child {
+    margin-right: 0; /* No margin on the right for the last element */
+}
+
+/* Ensure the text boxes are not too wide or narrow */
+.text-boxes > div {
+    max-width: 30%; /* Max width similar to the images */
+    min-width: 250px; /* Minimum width, adjust as needed */
+    padding: 10px; /* Padding for the text */
+}
