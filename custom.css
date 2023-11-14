@@ -242,23 +242,24 @@ Copy code
 }
 
 .gallery img {
-    max-width: 40%; /* Maximum width for each image */
+    max-width: 45%; /* Maximum width for each image */
     flex-grow: 1; /* Allows the image to grow to fill the space */
-    min-width: 250px;
+    min-width: 350px;
     margin-right: 5px; /* Spacing between images */
     object-fit: cover; /* Adjust as per your requirement */
 }
 
 /* If there's only one image in a row, it should not stretch too much */
 .gallery:only-child {
-    max-width: 40%; /* Maximum width when it's the only child */
-    min-width: 250px;
+    max-width: 45%; /* Maximum width when it's the only child */
+    min-width: 350px;
     margin: 0 auto; /* Center the image */
 }
 
 /* Adjusting the last child margin */
 .gallery img:last-child {
-    min-width: 250px;
+     max-width: 45%;
+    min-width: 350px;
     margin-right: 0;
 }
 @media screen and (max-width: 600px) {
