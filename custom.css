@@ -234,23 +234,53 @@ li::marker {
         margin-bottom: 20px;
     }
 }
-.gallery, .text-boxes {
+Copy code
+.gallery {
     display: flex;
-    justify-content: space-between;
+    justify-content: start; /* Align items to the start of the container */
+    flex-wrap: wrap; /* Allow items to wrap as needed */
 }
 
-.gallery img, .text-boxes > div {
-    flex: 1; /* This ensures that each image and text box takes up equal space */
-    margin-right: 5px; /* Adjust margin as needed */
+.gallery img {
+    max-width: 30%; /* Maximum width for each image */
+    flex-grow: 1; /* Allows the image to grow to fill the space */
+    margin-right: 5px; /* Spacing between images */
+    object-fit: cover; /* Adjust as per your requirement */
 }
 
-.gallery img:last-child, .text-boxes > div:last-child {
-    margin-right: 0; /* No margin on the right for the last element */
+/* If there's only one image in a row, it should not stretch too much */
+.gallery:only-child {
+    max-width: 30%; /* Maximum width when it's the only child */
+    margin: 0 auto; /* Center the image */
 }
 
-/* Ensure the text boxes are not too wide or narrow */
+/* Adjusting the last child margin */
+.gallery img:last-child {
+    margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+    .gallery img {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+.text-boxes {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
 .text-boxes > div {
-    max-width: 30%; /* Max width similar to the images */
-    min-width: 250px; /* Minimum width, adjust as needed */
-    padding: 10px; /* Padding for the text */
+    flex-grow: 1;
+    max-width: 30%; /* Adjust as needed */
+    margin-right: 5px; /* Spacing between text boxes */
+}
+
+.text-boxes > div:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .text-boxes > div {
+        max-width: 100%; /* Full width on smaller screens */
+    }
 }
