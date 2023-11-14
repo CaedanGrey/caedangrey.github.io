@@ -242,7 +242,7 @@ Copy code
 }
 
 .gallery img {
-    max-width: 45%; /* Maximum width for each image */
+    max-width: 55%; /* Maximum width for each image */
     flex-grow: 1; /* Allows the image to grow to fill the space */
     min-width: 350px;
     margin-right: 5px; /* Spacing between images */
@@ -251,14 +251,14 @@ Copy code
 
 /* If there's only one image in a row, it should not stretch too much */
 .gallery:only-child {
-    max-width: 45%; /* Maximum width when it's the only child */
+    max-width: 55%; /* Maximum width when it's the only child */
     min-width: 350px;
     margin: 0 auto; /* Center the image */
 }
 
 /* Adjusting the last child margin */
 .gallery img:last-child {
-     max-width: 45%;
+     max-width: 55%;
     min-width: 350px;
     margin-right: 0;
 }
@@ -275,7 +275,7 @@ Copy code
 
 .text-boxes > div {
     flex-grow: 1;
-    max-width: 30%; /* Adjust as needed */
+    max-width: 25%; /* Adjust as needed */
     margin-right: 5px; /* Spacing between text boxes */
 }
 
